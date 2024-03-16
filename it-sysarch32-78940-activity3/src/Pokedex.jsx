@@ -7,7 +7,7 @@ const Pokedex = ({ pokemonList }) => {
 
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
-  };
+  }
 
   return (
     <div>
@@ -17,9 +17,9 @@ const Pokedex = ({ pokemonList }) => {
         <button onClick={() => handleLanguageChange('chinese')}>Chinese</button>
         <button onClick={() => handleLanguageChange('french')}>French</button>
       </div>
-      {pokemonList.map(pokemon => (
-        <Pokemon key={pokemon.id} pokemon={pokemon} language={language} />
-      ))}
+      {Array.isArray(pokemonList) && pokemonList.map(pokemon => {
+        return <Pokemon key={pokemon.id} pokemon={pokemon} language={language} />
+      })}
     </div>
   );
 };
