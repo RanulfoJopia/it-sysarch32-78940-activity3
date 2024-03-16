@@ -15,9 +15,9 @@ const Pokemon = ({ pokemon, language }) => {
 
         </div>
         <div className="info1">
-          <p>HP: {pokemon.base.HP} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Speed: {pokemon.base.Attack}</p>
-          <p>Attk: {pokemon.base.Attack} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sp.Attk: {pokemon.base.Attack}</p>
-          <p>Def: {pokemon.base.Attack} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sp.def: {pokemon.base.Attack}</p>
+          <p>HP: {pokemon.base.HP} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Speed: {pokemon.base.Speed}</p>
+          <p>Attk: {pokemon.base.Attack} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sp.Attk: {pokemon.base["Sp. Attack"]}</p>
+          <p>Def: {pokemon.base.Def} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sp.def: {pokemon.base["Sp. Defense"]}</p>
         </div>
       </div>
     </div>
