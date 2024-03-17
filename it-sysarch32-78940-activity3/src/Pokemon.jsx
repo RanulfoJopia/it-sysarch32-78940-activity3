@@ -14,11 +14,18 @@ const Pokemon = ({ pokemon, language }) => {
         ))}</div>
 
         </div>
-        <div className="info1">
-          <p>HP: {pokemon.base.HP} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Speed: {pokemon.base.Speed}</p>
-          <p>Attk: {pokemon.base.Attack} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sp.Attk: {pokemon.base["Sp. Attack"]}</p>
-          <p>Def: {pokemon.base.Def} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sp.def: {pokemon.base["Sp. Defense"]}</p>
-        </div>
+        <div class="stats-container">
+  <div>
+    <p>HP: {pokemon.base.HP}</p>
+    <p>Attk: {pokemon.base.Attack}</p>
+    <p>Def: {pokemon.base.Defense}</p>
+  </div>
+  <div>
+    <p>Speed: {pokemon.base.Speed}</p>
+    <p>Sp.Attk: {pokemon.base["Sp. Attack"]}</p>
+    <p>Sp.def: {pokemon.base["Sp. Defense"]}</p>
+  </div>
+</div>
       </div>
     </div>
   );
